@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "MCQ Shortcut Solver",
+  "version": "1.0",
+  "description": "Solve MCQ questions quickly using a shortcut key.",
+  "permissions": ["activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "solve-mcq": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Q"
+      },
+      "description": "Solve selected MCQ"
+    }
+  }
+}
